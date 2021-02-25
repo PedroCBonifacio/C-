@@ -15,14 +15,14 @@ int main()
 	do
 	{
 		system("cls");
-		//EXIBI«√O DO MENU//
-		printf("1 - DefiniÁ„o do ExercÌcio 1 \n");
-		printf("2 - DefiniÁ„o do ExercÌcio 2 \n");
-		printf("3 - DefiniÁ„o do ExercÌcio 3 \n");
-		printf("4 - DefiniÁ„o do ExercÌcio 4 \n");
+		//EXIBI√á√ÉO DO MENU//
+		printf("1 - SISTEMA PARA CALCULO \n");
+		printf("2 - SISTEMA PARA RECONHECIMENTO DE CARACTERES \n");
+		printf("3 - SISTEMA PARA ROD√çZIO DE CARROS \n");
+		printf("4 - SISTEMA PARA VERIFICA√á√ÉO DE DATAS \n");
 		printf("-------------------------------");
-		//SOLICITANDO O EXERCÕCIO ESCOLHIDO//
-		printf("\nEscolha a definiÁ„o desejada (1-4): ");
+		//SOLICITANDO O EXERC√çCIO ESCOLHIDO//
+		printf("\nEscolha a defini√ß√£o desejada (1-4): ");
 		scanf("%d",&exerc);
 		system("cls"); 
 		//SELECIONANDO O ITEM ESCOLHIDO//
@@ -33,7 +33,7 @@ int main()
 			
 					printf("SISTEMA PARA CALCULO\n");
 					printf("-------------------------------------------------------\n");
-					printf("Digite a operaÁ„o na ordem: numero, operador, numero \n");
+					printf("Digite a opera√ß√£o na ordem: numero, operador, numero \n");
 					printf("Exemplos: 1+1, 2*2, 3-3\n");
 					printf("Se deseja sair digite 0 0 0\n");
 					printf("-------------------------------------------------------\n");
@@ -57,7 +57,7 @@ int main()
 						printf("%.1f / %.1f = %.1f",num1,num2,resultado);
 						}
 						else{
-							printf("N„o existe divis„o por 0!");
+							printf("N√£o existe divis√£o por 0!");
 						}
 						break;
 						
@@ -91,32 +91,32 @@ int main()
 			
 			if(caractere=='A'|| caractere=='E' || caractere=='I' || caractere=='O' || caractere=='U')
 			{
-				printf("O caractere digitado È uma vogal maiuscula");
+				printf("O caractere digitado √© uma vogal maiuscula");
 			}
 			else if(caractere=='a'|| caractere=='e' || caractere=='i' || caractere=='o' || caractere=='u')
 			{
-				printf("O caractere digitado È uma vogal minuscula");
+				printf("O caractere digitado √© uma vogal minuscula");
 			}
 			else if(caractere=='b'||caractere=='c'|| caractere=='d'|| caractere=='f'|| caractere=='g'|| caractere=='h'|| caractere=='j'|| caractere=='k'|| caractere=='l'|| caractere=='m'|| caractere=='n'|| caractere=='p'|| caractere=='q'|| caractere=='r'|| caractere=='s'|| caractere=='t'|| caractere=='v'|| caractere=='w'|| caractere=='x'|| caractere=='y'|| caractere=='z')
 			{
-				printf("O caractere digitado È uma consoante minuscula");
+				printf("O caractere digitado √© uma consoante minuscula");
 			}
 			else if(caractere=='B'|| caractere=='C'|| caractere=='D'|| caractere=='F'|| caractere=='G'|| caractere=='H'|| caractere=='J'|| caractere=='K'|| caractere=='L'|| caractere=='M'|| caractere=='N'|| caractere=='P'|| caractere=='Q'|| caractere=='R'|| caractere=='S'|| caractere=='T'|| caractere=='V'|| caractere=='W'|| caractere=='X'|| caractere=='Y'|| caractere=='Z')
 			{
-				printf("O caractere digitado È uma consoante maiuscula");
+				printf("O caractere digitado √© uma consoante maiuscula");
 			}
 			else if(caractere=='1'|| caractere=='2'|| caractere=='3'|| caractere=='4'|| caractere=='5'|| caractere== '6'|| caractere=='7'|| caractere=='8'|| caractere=='9'|| caractere=='0')
 			{
-				printf("O caractere digitado È um n˙mero");
+				printf("O caractere digitado √© um n√∫mero");
 			}
 			else
 			{
-				printf("O caractere digitado È um caractere especial");
+				printf("O caractere digitado √© um caractere especial");
 			}
 			break;
 			
 			case 3: int placa;
-			printf("SISTEMA PARA RODÕZIO\n");
+			printf("SISTEMA PARA ROD√çZIO DE CARROS\n");
 			printf("-------------------------------------------------------\n");
 			printf("Digite o ultimo digito da placa de seu carro: \n");
 				scanf("%d",&placa);
@@ -125,8 +125,8 @@ int main()
 			{
 				case 1: printf("Segunda-feira");break;
 				case 2: printf("Segunda-feira");break;
-				case 3: printf("TerÁa-feira");break;
-				case 4: printf("TerÁa-feira");break;
+				case 3: printf("Ter√ßa-feira");break;
+				case 4: printf("Ter√ßa-feira");break;
 				case 5: printf("Quarta-feira");break;
 				case 6: printf("Quarta-feira");break;
 				case 7: printf("Quinta-feira");break;
@@ -137,39 +137,39 @@ int main()
 			break;
 			
 			case 4: int dia, mes, ano;
-			printf("SISTEMA PARA VERIFICA«√O DE DATAS\n");
+			printf("SISTEMA PARA VERIFICA√á√ÉO DE DATAS\n");
 			printf("-------------------------------------------------------\n");
 			printf("Digite o dia: ");
 				scanf("%d",&dia);
-			printf("Digite o mÍs: ");
+			printf("Digite o m√™s: ");
 				scanf("%d",&mes);
 			printf("Digite o ano: ");
 				scanf("%d",&ano);
 			
 			if(dia>30)
 			{
-				printf("Data inv·lida");
+				printf("Data inv√°lida");
 			}
 			else if(mes>12)
 			{
-				printf("Data inv·lida");
+				printf("Data inv√°lida");
 			}
 			else if(mes==2 && dia>28)
 			{
-				printf("Data inv·lida");
+				printf("Data inv√°lida");
 			}
 			else
 			{
-				printf("Data v·lida");
+				printf("Data v√°lida");
 			}
 			
 			default: printf("\n-------------------------------------------------------");
 			printf("\nFim do programa");
 		}
-		//PERGUNTANDO SE O USU¡RIO DESEJA REPETIR//
+		//PERGUNTANDO SE O USU√ÅRIO DESEJA REPETIR//
 		
 		printf("\n-------------------------------------------------------");
-		printf("\nDeseja executar novamente o programa? [S]im ou [N]„o: ");
+		printf("\nDeseja executar novamente o programa? [S]im ou [N]√£o: ");
 		fflush(stdin);
 		scanf("%c",&continuar);
 	}while (continuar == 's' || continuar == 'S');
